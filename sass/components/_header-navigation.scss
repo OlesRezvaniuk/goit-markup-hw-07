@@ -1,4 +1,3 @@
-
 .header__pages {
     display: flex;
     margin-left: 93px;
@@ -27,25 +26,41 @@
 /* активна сторінка */
 .community__active {
     color: var(--action-text-color);
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--action-text-color);
+        border-radius: 2px;
+    }
 }
 
-.community__active::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--action-text-color);
-    border-radius: 2px;
-}
+// .community__active::after {
+//     position: absolute;
+//     content: "";
+//     width: 100%;
+//     height: 4px;
+//     bottom: 0;
+//     left: 0;
+//     background-color: var(--action-text-color);
+//     border-radius: 2px;
+// }
 
 .header__link--action {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--action:hover,
+    &--action:focus {
+        color: var(--action-text-color);
+    }
 }
 
-.header__link--action:hover,
-.header__link--action:focus {
-    color: var(--action-text-color);
-}
+// .header__link--action:hover,
+// .header__link--action:focus {
+//     color: var(--action-text-color);
+// }

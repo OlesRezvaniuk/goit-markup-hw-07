@@ -45,15 +45,26 @@
     border: none;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer__input:hover,
-.footer__input:focus {
-    outline: 1px solid var(--white-text-color);
-    color: var(--white-text-color);
-}
+    &:hover,
+    &:focus {
+        outline: 1px solid var(--white-text-color);
+        color: var(--white-text-color);
+    }
 
-.footer__input:focus,
-.footer__input:hover {
+    &:focus,
+    &:hover {
     cursor: pointer;
+    }
 }
+
+// .footer__input:hover,
+// .footer__input:focus {
+//     outline: 1px solid var(--white-text-color);
+//     color: var(--white-text-color);
+// }
+
+// .footer__input:focus,
+// .footer__input:hover {
+//     cursor: pointer;
+// }
