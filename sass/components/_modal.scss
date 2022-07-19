@@ -15,53 +15,52 @@
     background-color: var(--white-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-}
 
-.modal__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #212121;
-
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    $__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
     
+        color: #212121;
+    
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__form {
+        width: 100%;
+        height: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__item {
+        position: relative;
+        color: var(--heavy-text-color);
+        border: none;
+        border-radius: 4px;
+        width: max-content;
+        height: max-content;
+        margin-bottom: 28px;
+    }
+
+    &__input {
+        padding-left: 42px;
+        height: 40px;
+        width: 448px;
+        border-radius: 4px;
+        border: none;
+        outline: 1px solid rgba(33, 33, 33, 0.2);
+        cursor: pointer;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 
-
-.modal__form {
-    width: 100%;
-    height: max-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.modal__item {
-    position: relative;
-    color: var(--heavy-text-color);
-    border: none;
-    border-radius: 4px;
-    width: max-content;
-    height: max-content;
-    margin-bottom: 28px;
-}
-
-.form__input {
-    padding-left: 42px;
-    height: 40px;
-    width: 448px;
-    border-radius: 4px;
-    border: none;
-    outline: 1px solid rgba(33, 33, 33, 0.2);
-    cursor: pointer;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .form__label {
     position: absolute;
@@ -167,6 +166,11 @@
     cursor: pointer;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        outline: 1px solid var(--action-text-color);
+    }
 }
 
 .feedback:hover,

@@ -874,7 +874,7 @@ body {
   cursor: pointer;
 }
 
-.example__list {
+.example {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -883,16 +883,21 @@ body {
   gap: 30px;
   margin: 0px auto;
 }
+.example__item {
+  cursor: pointer;
+}
+.example__info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
 
 .overlay {
   position: relative;
   overflow: hidden;
 }
-
-.card-image {
-  display: block;
-}
-
 .overlay__title {
   position: absolute;
   width: 370px;
@@ -916,8 +921,8 @@ body {
   cursor: pointer;
 }
 
-.example__item {
-  cursor: pointer;
+.card-image {
+  display: block;
 }
 
 .example__item:hover .overlay__title,
@@ -949,14 +954,6 @@ body {
 .portfolio__info {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
-}
-
-.example__info {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
 }
 
 .backdrop {
